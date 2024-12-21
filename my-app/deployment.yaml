@@ -19,7 +19,7 @@ spec:
       containers:
         - name: nginx
           image: rameshm1/onc:0.1.0
-          imagePullSecrets:
-          - name: docker-cred
+      imagePullSecrets:
+      - name: docker-cred
           ports:
             - containerPort: 80
