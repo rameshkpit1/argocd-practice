@@ -16,10 +16,11 @@ spec:
       labels:
         app: nginx
     spec:
+      imagePullSecrets:
+       - name: docker-cred
       containers:
         - name: nginx
           image: rameshm1/onc:0.1.0
-      imagePullSecrets:
-      - name: docker-cred
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
