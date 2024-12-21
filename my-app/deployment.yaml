@@ -17,7 +17,7 @@ spec:
         app: nginx
     spec:
       imagePullSecrets:
-       - name: docker-cred
+       - name: docker-cred-n
       containers:
         - name: nginx
           image: rameshm1/onc:0.1.0
