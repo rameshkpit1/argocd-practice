@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: rameshm1/onc:0.1.0
+          image: rameshm1/nginx:0.1.0
           ports:
             - containerPort: 80
